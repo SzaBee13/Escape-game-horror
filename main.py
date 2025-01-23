@@ -55,11 +55,16 @@ def room(r):
             newRoom()
     elif r == 3:
         print("You are in room 3.")
+        time.sleep(1)
         print("There is a safe in the room.")
         if "note" in inv:
+            time.sleep(1)
             print("You remember the note you found in room 2.")
+            time.sleep(1)
             print(f"You try to open the safe with the code {inv["note"]}.")
+            time.sleep(1)
             print("The safe opens and you find a gun.")
+            time.sleep(1)
             t = input("Take the gun 'take' or leave it 'leave'?\n")
             if t.lower() == "take":
                 print("You take the gun. It might be useful. (Gun added to inventory)")
@@ -67,6 +72,7 @@ def room(r):
             else:
                 print("You leave the gun.")
         else:
+            time.sleep(1)
             print("You don't have the code to open the safe. Try to find it.")
         newRoom()
     elif r == 4:
