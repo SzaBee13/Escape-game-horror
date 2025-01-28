@@ -217,6 +217,8 @@ def newRoom():
             room(7)
         elif t == "8":
             room(8)
+        else:
+            newRoom()
 
 def init():
     inv = {}
